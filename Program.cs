@@ -19,7 +19,12 @@ public class lab2
         Console.WriteLine("How high to multiply by");
         int user = Convert.ToInt32(Console.ReadLine());
 
-        Console.WriteLine(multiNum * user);
+        Console.WriteLine("Result:");
+        for (int i = 0; i <= user; i++)
+        {
+            Console.WriteLine(multiNum + "*" + (i) + " = " + (multiNum * (i)));
+        }
+        
     }
 
 }
