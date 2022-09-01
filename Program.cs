@@ -1,4 +1,5 @@
-﻿
+﻿using ConsoleTables;
+
 public class lab2
 {
     static void Main(string[] args)
@@ -12,6 +13,7 @@ public class lab2
 
         Console.WriteLine(num1 + " + " + num2 + " = " + (num1+num2));
 
+
         // #2
         Console.WriteLine("Enter a number");
         int multiNum = Convert.ToInt32(Console.ReadLine());
@@ -24,7 +26,13 @@ public class lab2
         {
             Console.WriteLine(multiNum + "*" + (i) + " = " + (multiNum * (i)));
         }
-        
+
+
+        // #3
+        Console.WriteLine($"{sizeof(decimal)}");
+
+        ConsoleTable table = new ConsoleTable("Name");
+   
     }
 
 }
