@@ -26,7 +26,7 @@ public class lab2
         {
             Console.WriteLine(multiNum + "*" + (i) + " = " + (multiNum * (i)));
         }
-
+        Console.WriteLine();
 
 
         // #3
@@ -54,7 +54,7 @@ public class lab2
             Console.WriteLine("\nEnter a number");
             int number1 = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("\nSelect an operation + , - , * , or / ");
+            Console.WriteLine("\nSelect an operation + , - , * , /, or % ");
             String op = Console.ReadLine();
 
             Console.WriteLine("\nEnter a second number");
@@ -76,6 +76,10 @@ public class lab2
 
                 case "/":
                     Console.WriteLine("\n" + number1 + " / " + number2 + " = " + (number1 / number2));
+                    break;
+                
+                case "%":
+                    Console.WriteLine("\n" + number1 + " % " + number2 + " = " + (number1 % number2));
                     break;
 
                 default:
