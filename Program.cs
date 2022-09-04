@@ -48,8 +48,8 @@ public class lab2
         table.Write();
 
         // #4
-        bool exit;
-        if (exit = !true)
+        bool exit = false;
+        do
         {
             Console.WriteLine("Enter a number");
             int number1 = Convert.ToInt32(Console.ReadLine());
@@ -62,38 +62,49 @@ public class lab2
 
             switch (op)
             {
-                case '+':
-                    Console.WriteLine(number1 + " + " + number2 + " = " + (number1 + number2);
+                case "+":
+                    Console.WriteLine(number1 + " + " + number2 + " = " + (number1 + number2));
                     break;
 
-                case '-':
-                    Console.WriteLine(number1 + " - " + number2 + " = " + (number1 - number2);
+                case "-":
+                    Console.WriteLine(number1 + " - " + number2 + " = " + (number1 - number2));
                     break;
 
-                case '*':
-                    Console.WriteLine(number1 + " * " + number2 + " = " + (number1 * number2);
+                case "*":
+                    Console.WriteLine(number1 + " * " + number2 + " = " + (number1 * number2));
                     break;
 
-                case '/':
-                    Console.WriteLine(number1 + " / " + number2 + " = " + (number1 / number2);
+                case "/":
+                    Console.WriteLine(number1 + " / " + number2 + " = " + (number1 / number2));
                     break;
 
                 default:
                     Console.WriteLine("Operation Error");
+                    exit = true;
+                    break;
+
+            }
+
+            Console.WriteLine("Do another calculation?");
+            Console.WriteLine("1. Yes");
+            Console.WriteLine("2. No");
+            int choice = Convert.ToInt32(Console.ReadLine());
+
+            if(choice == 1)
+            {
+                exit = true;
+
+            }
+            else
+            {
+                exit = false;
             }
 
 
-        }
-        else
-        {
-
-        }
+        } while (exit == false);
 
 
+    }//end main
 
-
-
-    }
-
-}
+}//end lab2
 
