@@ -8,20 +8,20 @@ public class lab2
         Console.WriteLine("Enter a number");
         int num1 = Convert.ToInt32(Console.ReadLine());
 
-        Console.WriteLine("Enter a second number");
+        Console.WriteLine("\nEnter a second number");
         int num2 = Convert.ToInt32(Console.ReadLine());
 
         Console.WriteLine(num1 + " + " + num2 + " = " + (num1+num2));
 
 
         // #2
-        Console.WriteLine("Enter a number");
+        Console.WriteLine("\nEnter a number");
         int multiNum = Convert.ToInt32(Console.ReadLine());
 
-        Console.WriteLine("How high to multiply by");
+        Console.WriteLine("\nHow high to multiply by");
         int user = Convert.ToInt32(Console.ReadLine());
 
-        Console.WriteLine("Result:");
+        Console.WriteLine("\nResult:");
         for (int i = 0; i <= user; i++)
         {
             Console.WriteLine(multiNum + "*" + (i) + " = " + (multiNum * (i)));
@@ -51,53 +51,53 @@ public class lab2
         bool exit = false;
         do
         {
-            Console.WriteLine("Enter a number");
+            Console.WriteLine("\nEnter a number");
             int number1 = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Select an operation + , - , * , or / ");
+            Console.WriteLine("\nSelect an operation + , - , * , or / ");
             String op = Console.ReadLine();
 
-            Console.WriteLine("Enter a second number");
+            Console.WriteLine("\nEnter a second number");
             int number2 = Convert.ToInt32(Console.ReadLine());
 
             switch (op)
             {
                 case "+":
-                    Console.WriteLine(number1 + " + " + number2 + " = " + (number1 + number2));
+                    Console.WriteLine("\n" + number1 + " + " + number2 + " = " + (number1 + number2));
                     break;
 
                 case "-":
-                    Console.WriteLine(number1 + " - " + number2 + " = " + (number1 - number2));
+                    Console.WriteLine("\n" + number1 + " - " + number2 + " = " + (number1 - number2));
                     break;
 
                 case "*":
-                    Console.WriteLine(number1 + " * " + number2 + " = " + (number1 * number2));
+                    Console.WriteLine("\n" + number1 + " * " + number2 + " = " + (number1 * number2));
                     break;
 
                 case "/":
-                    Console.WriteLine(number1 + " / " + number2 + " = " + (number1 / number2));
+                    Console.WriteLine("\n" + number1 + " / " + number2 + " = " + (number1 / number2));
                     break;
 
                 default:
-                    Console.WriteLine("Operation Error");
+                    Console.WriteLine("\nInvalid Information Error");
                     exit = true;
                     break;
 
             }
 
-            Console.WriteLine("Do another calculation?");
+            Console.WriteLine("\nDo another calculation?");
             Console.WriteLine("1. Yes");
             Console.WriteLine("2. No");
             int choice = Convert.ToInt32(Console.ReadLine());
 
             if(choice == 1)
             {
-                exit = true;
+                exit = false;
 
             }
             else
             {
-                exit = false;
+                exit = true;
             }
 
 
